@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2835D5811E6E66FA008BE713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5801E6E66FA008BE713 /* AppDelegate.swift */; };
-		2835D5831E6E66FA008BE713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5821E6E66FA008BE713 /* ViewController.swift */; };
+		2835D5831E6E66FA008BE713 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2835D5821E6E66FA008BE713 /* SignInVC.swift */; };
 		2835D5861E6E66FB008BE713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2835D5841E6E66FB008BE713 /* Main.storyboard */; };
 		2835D5881E6E66FB008BE713 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2835D5871E6E66FB008BE713 /* Assets.xcassets */; };
 		2835D58B1E6E66FB008BE713 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2835D5891E6E66FB008BE713 /* LaunchScreen.storyboard */; };
+		2835D5931E6E67C2008BE713 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2835D5921E6E67C2008BE713 /* GoogleService-Info.plist */; };
+		CECD262B82501329C9EE24CF /* Pods_futbol.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF78D2896226743866EB8B1B /* Pods_futbol.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2835D57D1E6E66FA008BE713 /* futbol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = futbol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2835D5801E6E66FA008BE713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2835D5821E6E66FA008BE713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2835D5821E6E66FA008BE713 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2835D5851E6E66FB008BE713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2835D5871E6E66FB008BE713 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2835D58A1E6E66FB008BE713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2835D58C1E6E66FB008BE713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2835D5921E6E67C2008BE713 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8EA2F9D531182D9A4BC32F28 /* Pods-futbol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-futbol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-futbol/Pods-futbol.debug.xcconfig"; sourceTree = "<group>"; };
+		DF78D2896226743866EB8B1B /* Pods_futbol.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_futbol.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F5C5E64BF8B7AFD27200B /* Pods-futbol.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-futbol.release.xcconfig"; path = "Pods/Target Support Files/Pods-futbol/Pods-futbol.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CECD262B82501329C9EE24CF /* Pods_futbol.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				2835D57F1E6E66FA008BE713 /* futbol */,
 				2835D57E1E6E66FA008BE713 /* Products */,
+				B828433E426883783D33B9EB /* Pods */,
+				A4A3680BB8CB7C8C7E125D2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,64 @@
 		2835D57F1E6E66FA008BE713 /* futbol */ = {
 			isa = PBXGroup;
 			children = (
+				287A5F861E6E896400C88EA6 /* Model */,
+				287A5F881E6E897100C88EA6 /* Controller */,
 				2835D5801E6E66FA008BE713 /* AppDelegate.swift */,
-				2835D5821E6E66FA008BE713 /* ViewController.swift */,
+				287A5F871E6E896B00C88EA6 /* View */,
 				2835D5841E6E66FB008BE713 /* Main.storyboard */,
+				287A5F891E6E899400C88EA6 /* Supporting Files */,
+				2835D5921E6E67C2008BE713 /* GoogleService-Info.plist */,
+			);
+			path = futbol;
+			sourceTree = "<group>";
+		};
+		287A5F861E6E896400C88EA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		287A5F871E6E896B00C88EA6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		287A5F881E6E897100C88EA6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2835D5821E6E66FA008BE713 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		287A5F891E6E899400C88EA6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				2835D5871E6E66FB008BE713 /* Assets.xcassets */,
 				2835D5891E6E66FB008BE713 /* LaunchScreen.storyboard */,
 				2835D58C1E6E66FB008BE713 /* Info.plist */,
 			);
-			path = futbol;
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A4A3680BB8CB7C8C7E125D2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF78D2896226743866EB8B1B /* Pods_futbol.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B828433E426883783D33B9EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8EA2F9D531182D9A4BC32F28 /* Pods-futbol.debug.xcconfig */,
+				F85F5C5E64BF8B7AFD27200B /* Pods-futbol.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +130,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2835D58F1E6E66FB008BE713 /* Build configuration list for PBXNativeTarget "futbol" */;
 			buildPhases = (
+				EB6CFFB488068EDF5C4AB2B2 /* [CP] Check Pods Manifest.lock */,
 				2835D5791E6E66FA008BE713 /* Sources */,
 				2835D57A1E6E66FA008BE713 /* Frameworks */,
 				2835D57B1E6E66FA008BE713 /* Resources */,
+				7B9203DC1BF897E97BC75F51 /* [CP] Embed Pods Frameworks */,
+				BD77A5D1D6A6E16C2E59106D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2835D58B1E6E66FB008BE713 /* LaunchScreen.storyboard in Resources */,
+				2835D5931E6E67C2008BE713 /* GoogleService-Info.plist in Resources */,
 				2835D5881E6E66FB008BE713 /* Assets.xcassets in Resources */,
 				2835D5861E6E66FB008BE713 /* Main.storyboard in Resources */,
 			);
@@ -131,12 +194,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B9203DC1BF897E97BC75F51 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-futbol/Pods-futbol-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD77A5D1D6A6E16C2E59106D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-futbol/Pods-futbol-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB6CFFB488068EDF5C4AB2B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2835D5791E6E66FA008BE713 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2835D5831E6E66FA008BE713 /* ViewController.swift in Sources */,
+				2835D5831E6E66FA008BE713 /* SignInVC.swift in Sources */,
 				2835D5811E6E66FA008BE713 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +369,7 @@
 		};
 		2835D5901E6E66FB008BE713 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EA2F9D531182D9A4BC32F28 /* Pods-futbol.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = futbol/Info.plist;
@@ -270,6 +382,7 @@
 		};
 		2835D5911E6E66FB008BE713 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F85F5C5E64BF8B7AFD27200B /* Pods-futbol.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = futbol/Info.plist;
@@ -299,6 +412,7 @@
 				2835D5911E6E66FB008BE713 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
