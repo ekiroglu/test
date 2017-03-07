@@ -65,9 +65,9 @@
 			children = (
 				287A5F861E6E896400C88EA6 /* Model */,
 				287A5F881E6E897100C88EA6 /* Controller */,
-				2835D5801E6E66FA008BE713 /* AppDelegate.swift */,
 				287A5F871E6E896B00C88EA6 /* View */,
 				2835D5841E6E66FB008BE713 /* Main.storyboard */,
+				2835D5801E6E66FA008BE713 /* AppDelegate.swift */,
 				287A5F891E6E899400C88EA6 /* Supporting Files */,
 				2835D5921E6E67C2008BE713 /* GoogleService-Info.plist */,
 			);
